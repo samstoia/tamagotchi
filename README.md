@@ -1,17 +1,11 @@
+# Tamagotchi
+
+## Description
+A web application that allows a user to make a tamagotchi and take care of it.
 
 ## Specifications
 
-* user can choose name of tamagotchi and birthdate start the game
-
-<!-- * tamagotchi gender, birthdate is automatically assigned -->
-
-* life cycle timer begins at start of game
-
-* each "day" will have a daytime period and nighttime period, daytime will last 3/4 of "day", nighttime will last 1/4 of "day"
-
-* tamagotchi will have 4 life cycles: baby, child, teen, adult
-
-* user can pause game, return by unpausing game
+* user can choose name of tamagotchi 
 
 * tamagotchi has hunger level ranging from 0-5 (0 is not hungry, 5 is very hungry)
 
@@ -23,60 +17,102 @@
 
 * meals have point value of two, snacks have a point value of one
 
-* there is a limit to 9 meal points per day (3 meals X 2, 3 snacks X 1)
-
-* there is no limit on snacks, but tamagotchi can become sick if overfed snacks
-
 * hunger level will go up by one for each daytime interval
 
 * hunger level will go down based on point value of food being given (meal = 2, snack = 1)
-
-<!-- * amount of snacks tamagotchi can be given without getting sick depends on life cycle of the tamagotchi -->
-
-<!-- * tamagotchi will start out with weight of one -->
-
-<!-- * baby tamagotchi can be fed two snacks per day, child three per day, teen 4 per day, adult unlimited -->
-
-<!-- * tamagotchi's weight will go up at each life cycle, and it be impacted by the number of snacks it was given during previous life cycle (-1 if too few snacks, unchanged for normal amount, +1 for too many) -->
-
-<!-- * weight is changed when going to next life cycle, and will be greater depending on the number of snacks fed during previous life cycle -->
 
 * tamagotchi can become sick when overfed snacks
 
 * user can give tamagotchi medicine to make it better
 
-* to become healthy again, tamagotchi should be given medicine once
+* to become healthy again, tamagotchi should be given medicine 
 
-* tamagotchi can die if it stays sick without being given medicine for more than 3 days
-
+* tamagotchi can die if it stays sick without being given medicine
 * baby tamagotchi will poop five times a day, child 3 times a day
 
 * when tamagotchi poops, it will leave behind droppings
 
-<!-- * when tamagotchi is a baby, it will not give a warning before it poops
-
-* when tamagotchi is a child, it will give a warning before it goes to bathroom -->
-
-<!-- * if user enables toilet when the warning is given, the tamagotchi will not leave droppings behind -->
-
 * when droppings are left behind by tamagotchi, user should clean them up right away
 
-* tamagotchi can become sick when it reaches six sickness points.  each uncleaned dropping is 1 points.  having hunger level reach 5 is 2 points.  having a sleepless night is two points, each additional snack over the 3 per day is one point;
+## Known Bugs
 
-* same rules apply for dealing with sick tamagotchi
+* No known bugs.
 
-<!-- * tamagotchi's happiness will be affected by hunger, play, sleep and sickness  -->
+## Setup and Use
 
-* user can make tamagotchi sleep by turning off the light when it is nighttime
+#### Prerequisites
+* [Node.js](https://nodejs.org/en/)
+* [Node.js Package Manager (npm)](https://www.npmjs.com/)
 
-* if user forgets to turn off lights and tamagotchi doesn't sleep, it will contribute to making tamagotchi sick (the equivalent of having two droppings)
+#### Download Repo
+1. Download and install required software: Node.js, npm
+2. Clone : _$ git clone (repo HTTPS)_
 
-* tamagotchi will wake up automatically in the daytime
+#### Prepare
+1. Navigate to the application directory: _$ cd Solar-Age-Calculator_
+2. Execute the commands _$ npm install webpack@4.0.1 --save-dev_, _$npm install webpack-dev-server@3.1.0 --save-dev_ and _$ npm install_
 
-* if tamagotchi is sick for 3 days, it will die
+#### Open Locally - Browser
+1. Navigate to the application directory: _$ cd Solar-Age-Calculator_
+2. Execute the command _$ npm run start_
+3. The application will open in your preferred browser
 
-<!-- * happiness level for tamagotchi will depend on play and sickness
+#### Edit
+1. Navigate to the application directory: _$ cd Solar-Age-Calculator_
+2. Use your preferred IDE or editor to edit the project
 
-* user can play with tamagotchi up to two times a day
+#### Test
+1. Navigate to the application directory: _$ cd Solar-Age-Calculator_
+2. Execute _$ npm test_ to run application tests
 
-* if happiness is 0, sickness points go up by two -->
+
+## Built With
+
+* Atom (IDE)
+* JavaScript ES6
+* Node.js
+* npm
+* Jasmine
+* Karma
+* ESLint
+
+## Contributors
+
+| Author | GitHub | Email |
+|--------|:------:|:-----:|
+| Sam Stoia| [samstoia](https://github.com/samstoia) |  [samstoia@gmail.com](mailto:samstoia@gmail.com) |
+
+## Support and contact details
+
+If you have any feedback or concerns, please contact me at [samstoia@gmail.com](mailto:samstoia@gmail.com)
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). Copyright (C) 2019 Sam Stoia. All Rights Reserved.
+```
+MIT License
+
+Copyright (c) 2019 [Shawn Lunsford](https://github.com/LondresRi)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+## Acknowledgments
+
+#### [Epicodus](https://www.epicodus.com/)
